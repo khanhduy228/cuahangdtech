@@ -136,14 +136,25 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px; 
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-info {
-    flex: 1; 
+    flex: 1; /* Cột chữ bên trái */
+    text-align: left;
 }
 
+
 .footer-map {
-    flex: 1; 
+    width: 350px; 
+    height: 200px; 
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
 }
