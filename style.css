@@ -56,46 +56,53 @@
     cursor: pointer;
 }
 
+
 .banner {
-    background-color: #0d0101; 
+    background-color: #000000;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 60px 5%;
+    padding: 40px 5%;
     color: white;
-    height: 400px; 
+    width: 100%;
+    min-height: 450px;
 }
 
 
+.banner-left {
+    flex: 1;
+    text-align: left;
+}
+
 .banner-left h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 
+.banner-center {
+    flex: 2;
+    text-align: center;
+}
+
 .banner-center img {
-    height: 350px; 
-    object-fit: contain;
+    max-height: 400px; 
+    width: auto;
 }
 
 
 .banner-right {
+    flex: 1;
     text-align: center;
 }
 
-.buy-now {
+.buy-now-btn {
     background-color: #ff9f00;
     color: black;
     border: none;
-    padding: 15px 40px;
-    font-size: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.promo-info {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 500;
+    margin-bottom: 10px;
 }
