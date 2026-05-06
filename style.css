@@ -133,3 +133,19 @@
     height: 35px;
     object-fit: contain;
 }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; 
+}
+
+.footer-info {
+    flex: 1; 
+}
+
+.footer-map {
+    flex: 1; 
+}
+
+}
