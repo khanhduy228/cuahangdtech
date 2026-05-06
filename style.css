@@ -55,3 +55,47 @@
     width: 35px;
     cursor: pointer;
 }
+
+.banner {
+    background-color: #0d0101; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 5%;
+    color: white;
+    height: 400px; 
+}
+
+
+.banner-left h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.banner-center img {
+    height: 350px; /* Chỉnh độ lớn của hình iPhone */
+    object-fit: contain;
+}
+
+
+.banner-right {
+    text-align: center;
+}
+
+.buy-now {
+    background-color: #ff9f00;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.promo-info {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
