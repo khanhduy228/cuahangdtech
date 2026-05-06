@@ -74,7 +74,7 @@
 
 
 .banner-center img {
-    height: 350px; /* Chỉnh độ lớn của hình iPhone */
+    height: 350px; 
     object-fit: contain;
 }
 
