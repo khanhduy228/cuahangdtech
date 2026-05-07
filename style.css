@@ -173,12 +173,12 @@
 
 
 .product-card {
-    background-color: #e8dedb; 
+    background-color: #e8dedb;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     position: relative; 
-    transition: transform 0.3s;
+    overflow: hidden; 
 }
 
 .product-card:hover {
@@ -200,15 +200,25 @@
 
 .add-to-cart {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: none;
+    bottom: 15px; 
+    right: 15px; 
+    background: #fff; 
     border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+
 .add-to-cart img {
-    width: 25px;
+    width: 20px !important; 
+    height: auto;
+    margin-bottom: 0 !important; 
 }
 
 .product-card img {
