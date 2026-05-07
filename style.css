@@ -97,65 +97,63 @@
 
 
 .footer {
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 40px 0 20px 0;
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+    padding: 50px 0 20px 0;
     border-top: 1px solid #ddd;
-    font-family: Arial, sans-serif;
+    width: 100%;
 }
+
 
 .footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1100px;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    gap: 50px;
+    padding: 0 5%;
+    gap: 40px;
+}
+
+
+.footer-contact {
+    flex: 1;
 }
 
 .footer-logo {
-    color: #0044cc; 
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.bolt-icon {
-    font-style: normal;
+    color: #0044cc;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .contact-list {
-    list-style: none;
+    list-style: none; 
     padding: 0;
+    margin: 0;
 }
 
 .contact-list li {
+    margin-bottom: 12px;
+    font-size: 15px;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
-    font-size: 14px;
-    color: #555;
 }
 
-.icon {
-    margin-right: 10px;
-    color: #0044cc;
-    font-size: 16px;
-}
 
 .footer-map {
     flex: 1;
-    max-width: 500px;
+    max-width: 450px; 
 }
 
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #eee;
     font-size: 13px;
-    color: #888;
+    color: #777;
+    width: 100%;
 }
 .products {
     padding: 50px 5%;
