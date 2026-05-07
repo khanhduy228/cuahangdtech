@@ -120,10 +120,21 @@
     flex: 1;
 }
 
+
 .footer-logo {
-    color: #0044cc;
+    color: #000000 !important; 
     font-size: 24px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+}
+
+
+.phone-icon {
+    color: #000000 !important; 
+    font-size: 26px;
+    margin-right: 10px;
 }
 
 .contact-list {
