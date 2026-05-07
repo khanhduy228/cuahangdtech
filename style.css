@@ -97,66 +97,65 @@
 
 
 .footer {
-    background-color: #827370; 
-    color: white !important; 
-    padding: 40px 5%;
-    width: 100%;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
 }
 
-.footer-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-text {
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-
-.social-icons img {
-    width: 35px; 
-    height: 35px;
-    object-fit: contain;
-}
-.footer-container {
+.footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
+    align-items: flex-start;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 0 20px;
+    gap: 50px;
 }
 
-.footer-info {
-    flex: 1; /* Cột chữ bên trái */
-    text-align: left;
+.footer-logo {
+    color: #0044cc; 
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
+.bolt-icon {
+    font-style: normal;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #0044cc;
+    font-size: 16px;
+}
 
 .footer-map {
-    width: 350px; 
-    height: 200px; 
+    flex: 1;
+    max-width: 500px;
 }
 
-.footer-map iframe {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #aaa;
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #888;
 }
 .products {
     padding: 50px 5%;
