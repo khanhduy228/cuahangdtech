@@ -336,3 +336,29 @@
     border-color: #ef4444;
     background-color: #fef2f2; 
 }
+
+#cart-items-list {
+    max-height: 400px;    
+    overflow-y: auto;     
+    overflow-x: hidden;   
+    padding-right: 10px;  
+}
+
+
+#cart-items-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cart-items-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+#cart-items-list::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 10px;
+}
+
+#cart-items-list::-webkit-scrollbar-thumb:hover {
+    background: #1a49db;
+}
