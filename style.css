@@ -298,3 +298,19 @@
     cursor: pointer;
     margin-top: 15px;
 }
+.qty-btn {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #1a49db;
+    background-color: white;
+    color: #1a49db;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #1a49db;
+    color: white;
+}
