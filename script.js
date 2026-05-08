@@ -1,19 +1,16 @@
 
 let cart = JSON.parse(localStorage.getItem('dtech_cart')) || [];
 
-
 document.addEventListener('DOMContentLoaded', updateCartUI);
 
 
 function addToCart(name, price, image) {
     const existingItem = cart.find(item => item.name === name);
-
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({ name, price, image, quantity: 1 });
     }
-
     saveAndRefresh();
     showToast();
 }
@@ -57,7 +54,6 @@ function toggleCart() {
     const modal = document.getElementById('cart-modal');
     if (modal) {
         modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
-        updateCartUI();
     }
 }
 
@@ -65,17 +61,15 @@ function toggleCart() {
 function updateCartUI() {
     const list = document.getElementById('cart-items-list');
     const totalDisplay = document.getElementById('total-amount');
-    
     if (!list || !totalDisplay) return;
 
     list.innerHTML = '';
     let total = 0;
 
     if (cart.length === 0) {
-        list.innerHTML = '<p class="empty-msg" style="text-align:center; padding:20px;">Giỏ hàng của Duy đang trống.</p>';
+        list.innerHTML = '<p style="text-align:center; padding:20px;">Giỏ hàng đang trống.</p>';
     } else {
         cart.forEach((item, index) => {
-    
             const priceValue = parseInt(item.price.replace(/\./g, '').replace('đ', ''));
             total += priceValue * item.quantity;
 
@@ -84,17 +78,14 @@ function updateCartUI() {
                     <div style="display:flex; align-items:center;">
                         <img src="${item.image}" width="50" style="margin-right:15px; border-radius:5px;">
                         <div>
-                            <p style="font-weight:bold; margin:0; font-size:14px;">${item.name}</p>
-                            <p style="color:#1a49db; margin:5px 0; font-weight:bold;">${item.price}</p>
+                            <p style="font-weight:bold; margin:0;">${item.name}</p>
+                            <p style="color:#1a49db; margin:5px 0;">${item.price}</p>
                         </div>
                     </div>
-                    
-                    <div class="quantity-controls" style="display:flex; align-items:center; gap:8px;">
-                        <button onclick="removeFromCart(${index})" class="remove-btn" title="Xóa">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </button>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button onclick="removeFromCart(${index})" class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
                         <button onclick="changeQuantity(${index}, -1)" class="qty-btn">-</button>
-                        <span style="font-weight:bold; min-width:20px; text-align:center;">${item.quantity}</span>
+                        <span style="font-weight:bold;">${item.quantity}</span>
                         <button onclick="changeQuantity(${index}, 1)" class="qty-btn">+</button>
                     </div>
                 </div>`;
