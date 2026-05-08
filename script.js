@@ -55,11 +55,15 @@ function updateCartUI() {
                 </div>
                 
                 <div class="quantity-controls" style="display:flex; align-items:center; gap:10px;">
+                    <button onclick="removeFromCart(${index})" class="remove-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                
                     <button onclick="changeQuantity(${index}, -1)" class="qty-btn">-</button>
                     <span style="font-weight:bold; min-width:20px; text-align:center;">${item.quantity}</span>
                     <button onclick="changeQuantity(${index}, 1)" class="qty-btn">+</button>
                 </div>
-            </div>`;
+            </div>;
     });
     totalDisplay.innerText = total.toLocaleString('vi-VN') + 'đ';
 }
