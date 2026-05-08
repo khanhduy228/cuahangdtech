@@ -148,6 +148,25 @@
         <p>© 2026 D.Tech. Bảo lưu mọi quyền. | Điều khoản | Bảo mật</p>
     </div>
 </footer>
+<div id="toast-message" class="toast">
+    <i class="fa-solid fa-circle-check"></i> Đã thêm sản phẩm vào giỏ hàng!
+</div>
+
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</h2>
+            <span class="close-btn" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items-list">
+            <p class="empty-msg">Giỏ hàng của bạn đang trống.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="total-price">Tổng tiền: <span id="total-amount">0đ</span></div>
+            <button class="checkout-btn">Thanh toán ngay</button>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 
