@@ -314,3 +314,25 @@
     background-color: #1a49db;
     color: white;
 }
+
+.remove-btn {
+    background: none;
+    border: 1px solid #d1d5db; 
+    color: #9ca3af; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px; 
+}
+
+
+.remove-btn:hover {
+    color: #ef4444; 
+    border-color: #ef4444;
+    background-color: #fef2f2; 
+}
