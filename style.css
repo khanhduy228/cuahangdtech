@@ -382,3 +382,19 @@
     border-radius: 15px; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
 }
+
+.ipad-page-banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.ipad-page-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
