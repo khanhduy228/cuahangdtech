@@ -66,10 +66,18 @@ function updateCartUI() {
 function changeQuantity(index, delta) {
     cart[index].quantity += delta;
 
-    // Nếu số lượng giảm xuống 0 thì xóa luôn sản phẩm đó
+
     if (cart[index].quantity <= 0) {
         cart.splice(index, 1);
     }
+
+    localStorage.setItem('dtech_cart', JSON.stringify(cart));
+    updateCartUI();
+}
+function removeFromCart(index) {
+
+    cart.splice(index, 1);
+    
 
     localStorage.setItem('dtech_cart', JSON.stringify(cart));
     updateCartUI();
