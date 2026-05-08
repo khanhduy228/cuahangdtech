@@ -28,7 +28,7 @@ function changeQuantity(index, delta) {
 
 
 function removeFromCart(index) {
-    if (confirm('Ông có chắc muốn xóa máy này khỏi giỏ không?')) {
+    {
         cart.splice(index, 1);
         saveAndRefresh();
     }
