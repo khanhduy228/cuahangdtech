@@ -27,11 +27,10 @@ function changeQuantity(index, delta) {
 }
 
 
+
 function removeFromCart(index) {
-    {
-        cart.splice(index, 1);
-        saveAndRefresh();
-    }
+    cart.splice(index, 1);
+    saveAndRefresh();
 }
 
 
@@ -67,8 +66,9 @@ function updateCartUI() {
     let total = 0;
 
     if (cart.length === 0) {
-        list.innerHTML = '<p style="text-align:center; padding:20px;">Giỏ hàng đang trống.</p>';
-    } else {
+    list.innerHTML = '<p style="text-align:center; padding:20px; color: #666;">Giỏ hàng của bạn đang trống.</p>';
+    }
+     else {
         cart.forEach((item, index) => {
             const priceValue = parseInt(item.price.replace(/\./g, '').replace('đ', ''));
             total += priceValue * item.quantity;
