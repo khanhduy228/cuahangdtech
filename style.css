@@ -367,37 +367,49 @@
     padding-right: 10px;
 }
 
+
 .iphone-page-banner {
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1100px; 
     margin: 20px auto; 
-    padding: 0 15px;
+    padding: 0 20px;   
     box-sizing: border-box;
 }
 
 .iphone-page-banner img {
     width: 100%;
-    height: auto; 
-    display: block; 
+    height: 350px;      
+    object-fit: cover; 
     border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+}
+.ipad-page-banner {
+    width: 100%;
+    max-width: 1100px; 
+    margin: 20px auto; 
+    padding: 0 20px;   
+    box-sizing: border-box;
+}
+.ipad-page-banner img {
+    width: 100%;
+    height: 350px;      
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
 }
 
-.ipad-page-banner img {
-    width: 100%;
-    height: 400px; 
-    object-fit: cover;
-    object-position: center; 
-    display: block;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+@media (max-width: 768px) {
+    .iphone-page-banner img {
+        height: 200px; 
+    }
 }
-.ipad-page-banner img {
-    width: 100%;
-    height: auto; 
-    display: block; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+@media (max-width: 768px) {
+    .ipad-page-banner img {
+         height: 200px; 
+    }
 }
 
 
