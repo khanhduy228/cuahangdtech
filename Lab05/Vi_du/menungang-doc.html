@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap" rel="stylesheet">
+    <style>
+        .menu-ngang {
+            list-style: none;
+            background-color: aquamarine;
+            display: flex;
+            padding: 5px;
+        }
+        .menu-ngang li{
+            min-height: 30px;
+            line-height: 30px;
+            margin-left: 30px;
+        }
+        .menu-ngang li a{
+            text-decoration: none;
+        }
+        .menu-ngang li:hover{
+            background-color: crimson;
+            border-radius: 20px;
+        }
+        .menu-ngang li a:hover{
+            color: blue;
+            font-weight: bold;
+        }
+    
+        .menu-doc{
+            list-style: none;
+            background-color: blueviolet;
+            padding: 10px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .menu-doc li{
+            margin: 0;
+            line-height: 30px;
+            height: 40px;
+            border-bottom: white solid 1px;
+        }
+        .menu-doc li a{
+            text-decoration: none;
+        }
+        .menu-doc li:hover{
+            filter: brightness(130%);
+            font-style: italic;
+        }
+        .menu-doc li a:hover{
+            color: aqua;
+        }
+        
+        .fontchu {
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "MORF" 15,
+            "SHLN" 50;
+        }
+        .lakki-reddy-regular {
+        font-family: "Lakki Reddy", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <ul class="menu-ngang">
+            <li class="fontchu"><a href="">Trang chu</a></li>
+            <li class="fontchu"><a href="">Gioi Thieu</a></li>
+            <li class="fontchu"><a href="">San Pham</a></li>
+            <li class="fontchu"><a href="">Dich vu</a></li>
+            <li class="fontchu"><a href="">Lien he</a></li>
+        </ul>
+    </div>
+       
+    <div>
+        <ul class="menu-doc">
+            <li class="lakki-reddy-regular"><a href="">Trang chu</a></li>
+            <li><a href="">Gioi Thieu</a></li>
+            <li><a href="">San Pham</a></li>
+            <li><a href="">Dich vu</a></li>
+            <li><a href="">Lien he</a></li>
+        </ul>
+    </div>
+</body>
+</html>
