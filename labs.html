@@ -9,4 +9,135 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+     <nav class="navbar">
+       <a href="index.html" class="logo">D.Tech</a>
+        
+        <ul class="nav-links">
+            <li><a href="iphone.html">iPhone</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="phukien.html">Phụ Kiện</a></li>
+            <li><a href="labs.html">Thực Hành Lab</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search.." class="search-input">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="cart-icon" onclick="toggleCart()" style="cursor: pointer;">
+            <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+    </nav>
+<main class="container lab-page">
+        <h1 class="page-title">Lab thực hành</h1>
+
+        <div class="lab-grid">
+            <!-- Lab 01 -->
+            <div class="lab-card">
+                <h3>Lab 1 (3 bài)</h3>
+                <p>Làm quen với HTML, danh sách và bảng.</p>
+                <div class="lab-links">
+                    <a href="Lab01/Vi_du/index.html" class="btn-lab"><i class="fa-solid fa-file-code"></i> Bài 1.1</a>
+                    <a href="Lab01/Vi_du/lab1_bai3.html" class="btn-lab"><i class="fa-solid fa-file-code"></i> Bài 1.3</a>
+                    <a href="Lab01/Vi_du/lab1_bai4.html" class="btn-lab"><i class="fa-solid fa-file-code"></i> Bài 1.4</a>
+                </div>
+            </div>
+        
+            <!-- Lab 02 -->
+            <div class="lab-card">
+                <h3>Lab 2 (3 bài)</h3>
+                <p>Thực hành kẻ bảng và định dạng khung table.</p>
+                <div class="lab-links">
+                    <a href="Lab02/bai1.html" class="btn-lab"><i class="fa-solid fa-file-code"></i> Bài 2.1</a>
+                    <a href="Lab02/bai2.html" class="btn-lab"><i class="fa-solid fa-file-code"></i> Bài 2.2</a>
+                    <a href="Lab02/lab02_khung_table.html" class="btn-lab"><i class="fa-solid fa-table"></i> Table</a>
+                </div>
+            </div>
+        
+            <!-- Lab 03 -->
+            <div class="lab-card">
+                <h3>Lab 3 (2 bài)</h3>
+                <p>Xử lý hình ảnh và bố cục nâng cao.</p>
+                <div class="lab-links">
+                    <a href="Lab03/Vi_du/index.html" class="btn-lab"><i class="fa-solid fa-image"></i> Ví dụ 1</a>
+                    <a href="Lab03/Vi_du_Lab01/index.html" class="btn-lab"><i class="fa-solid fa-image"></i> Ví dụ 2</a>
+                </div>
+            </div>
+        
+            <!-- Lab 04 -->
+            <div class="lab-card">
+                <h3>Lab 4 (4 bài)</h3>
+                <p>Thực hành JavaScript cơ bản và Form.</p>
+                <div class="lab-links">
+                    <a href="Lab04/Vi_du/index.html" class="btn-lab"><i class="fa-brands fa-js"></i> Ví dụ</a>
+                    <a href="Lab04/Vi_du/lab04_bai1.html" class="btn-lab"><i class="fa-brands fa-js"></i> Bài 1</a>
+                    <a href="Lab04/Vi_du/lab04_bai2.html" class="btn-lab"><i class="fa-brands fa-js"></i> Bài 2</a>
+                    <a href="Lab04/Vi_du/lab04_bai3.html" class="btn-lab"><i class="fa-brands fa-js"></i> Bài 3</a>
+                </div>
+            </div>
+        
+            <!-- Lab 05 -->
+            <div class="lab-card">
+                <h3>Lab 5 (3 bài)</h3>
+                <p>Xây dựng Menu ngang và Menu dọc chuyên nghiệp.</p>
+                <div class="lab-links">
+                    <a href="Lab05/Vi_du/index.html" class="btn-lab"><i class="fa-solid fa-bars"></i> Ví dụ</a>
+                    <a href="Lab05/Vi_du/menungang-doc.html" class="btn-lab"><i class="fa-solid fa-bars"></i> Menu</a>
+                    <a href="Lab05/Bai_2/index.html" class="btn-lab"><i class="fa-solid fa-bars"></i> Bài 2</a>
+                </div>
+            </div>
+        
+            <!-- Lab 07 -->
+            <div class="lab-card">
+                <h3>Lab 7 (2 bài)</h3>
+                <p>Thiết kế Layout và Responsive cho website.</p>
+                <div class="lab-links">
+                    <a href="Lab07.1/lab7.1.html" class="btn-lab"><i class="fa-solid fa-display"></i> Lab 7.1</a>
+                    <a href="Lab07.2/lab7.2.html" class="btn-lab"><i class="fa-solid fa-mobile-screen"></i> Lab 7.2</a>
+                </div>
+            </div>
+        
+            <!-- Lab 08 -->
+            <div class="lab-card">
+                <h3>Lab 8 (2 bài)</h3>
+                <p>Hiệu ứng nâng cao và hoàn thiện sản phẩm.</p>
+                <div class="lab-links">
+                    <a href="Lab08.1/lab8.1.html" class="btn-lab"><i class="fa-solid fa-wand-magic-sparkles"></i> Lab 8.1</a>
+                    <a href="Lab08.2/lab8.2.html" class="btn-lab"><i class="fa-solid fa-wand-magic-sparkles"></i> Lab 8.2</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-contact">
+            <h2 class="footer-logo">
+            <i class="fa-solid fa-mobile-screen-button phone-icon"></i> 
+            <strong>D.Tech</strong>
+            </h2>
+            <ul class="contact-list">
+                <li>📍 180 Cao Lỗ, Phường 4, Quận 8, TP. Hồ Chí Minh</li>
+                <li>✉️ Dtech@gmail.com</li>
+                <li>📞 0789321456</li>
+                <li>🕒 Thứ 2 – Chủ nhật: 8:00 – 21:00</li>
+            </ul>
+        </div>
+
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.95441552034!2d106.6778321!3d10.7380011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0xedc46f47030588b5!2zMTgwIENhbyBM4buXLCBQaMaw4budbmcgNCwgUXXhuq1uIDgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1715093000000" 
+                width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 D.Tech. Bảo lưu mọi quyền. | Điều khoản | Bảo mật</p>
+    </div>
+</footer>
+
+</body>
+</html>
     
